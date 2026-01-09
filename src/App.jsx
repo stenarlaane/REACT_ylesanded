@@ -4,11 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ExpenseItem from './components/ExpenseItem'
 
-function App() {
+const App = () => {
+
+  const data = {
+    date: new Date(2024, 10, 12),
+    title: "New book",
+    price: 30.99
+  }
 
   return (
     <div className="App">
-    <ExpenseItem />
+    <ExpenseItem data={data}/>
     </div>
   );
 }
