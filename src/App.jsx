@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ExpenseItem from './components/ExpenseItem'
+import Expenses from './components/Expenses'
 
 const App = () => {
 
@@ -22,8 +22,7 @@ const App = () => {
 
   return (
     <div className="App">
-    <ExpenseItem data={expenses[0]}/>
-    <ExpenseItem data={expenses[1]}/>
+      <Expenses expenses={expenses}/>
     </div>
   );
 }

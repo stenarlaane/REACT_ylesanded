@@ -1,6 +1,7 @@
 import ExpenseDate from './ExpenseDate'
 import './ExpenseItem.css'
-
+import './Expenses.css'
+ 
 const ExpenseItem = (props) => {
 
     return (
